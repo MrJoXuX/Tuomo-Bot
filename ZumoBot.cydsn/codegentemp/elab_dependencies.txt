@@ -1,4 +1,4 @@
-C:\Users\joack\OneDrive\Tiedostot\Zumo.release04\Zumo01\ZumoBot.cydsn\TopDesign\TopDesign.cysch
+C:\Users\joack\OneDrive\Tiedostot\GitHub\Tuomo-Bot\ZumoBot.cydsn\TopDesign\TopDesign.cysch
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cysym
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.pdf
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cystate
@@ -267,7 +267,7 @@ D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\Custom\custom.cs
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.cysym
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v
-C:\Users\joack\OneDrive\Tiedostot\Zumo.release04\Zumo01\ZumoBot.cydsn\ZumoBot.cydwr
+C:\Users\joack\OneDrive\Tiedostot\GitHub\Tuomo-Bot\ZumoBot.cydsn\ZumoBot.cydwr
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\cm3gcc.ld
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\Cm3RealView.scat
 D:\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\Cm3Start.c

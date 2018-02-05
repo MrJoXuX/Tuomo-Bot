@@ -2661,103 +2661,103 @@ END GROUP
  .debug_frame   0x00003abc       0x20 d:/psoc creator/4.1/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(isatty.o)
  .debug_frame   0x00003adc       0x20 d:/psoc creator/4.1/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(lseek.o)
 
-.debug_str      0x00000000     0x3356
+.debug_str      0x00000000     0x3397
  *(.debug_str)
- .debug_str     0x00000000      0x274 .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x2cf (size before relaxing)
- .debug_str     0x00000274       0x5e .\CortexM3\ARM_GCC_541\Debug\Accel.o
+ .debug_str     0x00000000      0x26f .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x2ca (size before relaxing)
+ .debug_str     0x0000026f       0xa4 .\CortexM3\ARM_GCC_541\Debug\Accel.o
                                 0x1fc (size before relaxing)
- .debug_str     0x000002d2       0x2a .\CortexM3\ARM_GCC_541\Debug\Ambient.o
+ .debug_str     0x00000313       0x2a .\CortexM3\ARM_GCC_541\Debug\Ambient.o
                                 0x1b0 (size before relaxing)
- .debug_str     0x000002fc       0x39 .\CortexM3\ARM_GCC_541\Debug\Gyro.o
+ .debug_str     0x0000033d       0x39 .\CortexM3\ARM_GCC_541\Debug\Gyro.o
                                 0x1de (size before relaxing)
- .debug_str     0x00000335       0xa7 .\CortexM3\ARM_GCC_541\Debug\I2C_made.o
+ .debug_str     0x00000376       0xa7 .\CortexM3\ARM_GCC_541\Debug\I2C_made.o
                                 0x260 (size before relaxing)
- .debug_str     0x000003dc       0x6f .\CortexM3\ARM_GCC_541\Debug\IR.o
+ .debug_str     0x0000041d       0x6f .\CortexM3\ARM_GCC_541\Debug\IR.o
                                 0x213 (size before relaxing)
- .debug_str     0x0000044b       0x1d .\CortexM3\ARM_GCC_541\Debug\Magnet.o
+ .debug_str     0x0000048c       0x1d .\CortexM3\ARM_GCC_541\Debug\Magnet.o
                                 0x1d7 (size before relaxing)
- .debug_str     0x00000468       0x99 .\CortexM3\ARM_GCC_541\Debug\Motor.o
+ .debug_str     0x000004a9       0x99 .\CortexM3\ARM_GCC_541\Debug\Motor.o
                                 0x280 (size before relaxing)
- .debug_str     0x00000501       0x52 .\CortexM3\ARM_GCC_541\Debug\Nunchuk.o
+ .debug_str     0x00000542       0x52 .\CortexM3\ARM_GCC_541\Debug\Nunchuk.o
                                 0x253 (size before relaxing)
- .debug_str     0x00000553      0x2b6 .\CortexM3\ARM_GCC_541\Debug\Reflectance.o
+ .debug_str     0x00000594      0x2b6 .\CortexM3\ARM_GCC_541\Debug\Reflectance.o
                                 0x47e (size before relaxing)
- .debug_str     0x00000809      0x283 .\CortexM3\ARM_GCC_541\Debug\Ultra.o
+ .debug_str     0x0000084a      0x283 .\CortexM3\ARM_GCC_541\Debug\Ultra.o
                                 0x465 (size before relaxing)
- .debug_str     0x00000a8c       0x75 .\CortexM3\ARM_GCC_541\Debug\Beep.o
+ .debug_str     0x00000acd       0x75 .\CortexM3\ARM_GCC_541\Debug\Beep.o
                                 0x228 (size before relaxing)
- .debug_str     0x00000b01      0x18e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x00000b42      0x18e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x352 (size before relaxing)
- .debug_str     0x00000c8f       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00000cd0       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                                 0x1e8 (size before relaxing)
- .debug_str     0x00000d04      0x13f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_str     0x00000d45      0x13f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
                                 0x30e (size before relaxing)
- .debug_str     0x00000e43       0xeb .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(PWM.o)
+ .debug_str     0x00000e84       0xeb .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(PWM.o)
                                 0x354 (size before relaxing)
- .debug_str     0x00000f2e       0xfd .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C.o)
+ .debug_str     0x00000f6f       0xfd .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C.o)
                                 0x2e5 (size before relaxing)
- .debug_str     0x0000102b       0x86 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_INT.o)
+ .debug_str     0x0000106c       0x86 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_INT.o)
                                 0x263 (size before relaxing)
- .debug_str     0x000010b1       0x56 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_PM.o)
+ .debug_str     0x000010f2       0x56 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_PM.o)
                                 0x281 (size before relaxing)
- .debug_str     0x00001107      0x129 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_MASTER.o)
+ .debug_str     0x00001148      0x129 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(I2C_MASTER.o)
                                 0x3a8 (size before relaxing)
- .debug_str     0x00001230      0x7a7 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CyLib.o)
+ .debug_str     0x00001271      0x7a7 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CyLib.o)
                                 0xa4b (size before relaxing)
- .debug_str     0x000019d7      0x359 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(cyPm.o)
+ .debug_str     0x00001a18      0x359 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(cyPm.o)
                                 0x72b (size before relaxing)
- .debug_str     0x00001d30       0x76 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(MotorDirLeft.o)
+ .debug_str     0x00001d71       0x76 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(MotorDirLeft.o)
                                 0x209 (size before relaxing)
- .debug_str     0x00001da6       0x6f .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(MotorDirRight.o)
+ .debug_str     0x00001de7       0x6f .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(MotorDirRight.o)
                                 0x20e (size before relaxing)
- .debug_str     0x00001e15      0x119 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(sensor_isr.o)
+ .debug_str     0x00001e56      0x119 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(sensor_isr.o)
                                 0x2f0 (size before relaxing)
- .debug_str     0x00001f2e      0x2b2 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(UART_1.o)
+ .debug_str     0x00001f6f      0x2b2 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(UART_1.o)
                                 0x4b7 (size before relaxing)
- .debug_str     0x000021e0      0x21b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery.o)
+ .debug_str     0x00002221      0x21b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery.o)
                                 0x4f3 (size before relaxing)
- .debug_str     0x000023fb       0x39 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery_INT.o)
+ .debug_str     0x0000243c       0x39 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery_INT.o)
                                 0x1a3 (size before relaxing)
- .debug_str     0x00002434       0x63 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(BatteryLed.o)
+ .debug_str     0x00002475       0x63 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(BatteryLed.o)
                                 0x1ff (size before relaxing)
- .debug_str     0x00002497       0x68 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(IR_receiver.o)
+ .debug_str     0x000024d8       0x68 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(IR_receiver.o)
                                 0x204 (size before relaxing)
- .debug_str     0x000024ff       0x4b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Trig.o)
+ .debug_str     0x00002540       0x4b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Trig.o)
                                 0x1e1 (size before relaxing)
- .debug_str     0x0000254a       0xf3 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer.o)
+ .debug_str     0x0000258b       0xf3 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer.o)
                                 0x329 (size before relaxing)
- .debug_str     0x0000263d       0x4c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Echo.o)
+ .debug_str     0x0000267e       0x4c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Echo.o)
                                 0x1e1 (size before relaxing)
- .debug_str     0x00002689      0x10c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ultra_isr.o)
+ .debug_str     0x000026ca      0x10c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ultra_isr.o)
                                 0x2e2 (size before relaxing)
- .debug_str     0x00002795      0x197 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(UART_1_IntClock.o)
+ .debug_str     0x000027d6      0x197 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(UART_1_IntClock.o)
                                 0x352 (size before relaxing)
- .debug_str     0x0000292c      0x183 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery_theACLK.o)
+ .debug_str     0x0000296d      0x183 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(ADC_Battery_theACLK.o)
                                 0x382 (size before relaxing)
- .debug_str     0x00002aaf      0x10b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Buzzer_PWM.o)
+ .debug_str     0x00002af0      0x10b .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Buzzer_PWM.o)
                                 0x310 (size before relaxing)
- .debug_str     0x00002bba       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(L3.o)
+ .debug_str     0x00002bfb       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(L3.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x00002bed      0x119 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_L3.o)
+ .debug_str     0x00002c2e      0x119 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_L3.o)
                                 0x329 (size before relaxing)
- .debug_str     0x00002d06      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_R3.o)
+ .debug_str     0x00002d47      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_R3.o)
                                 0x329 (size before relaxing)
- .debug_str     0x00002e13      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_R1.o)
+ .debug_str     0x00002e54      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_R1.o)
                                 0x329 (size before relaxing)
- .debug_str     0x00002f20       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(R1.o)
+ .debug_str     0x00002f61       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(R1.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x00002f53       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(R3.o)
+ .debug_str     0x00002f94       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(R3.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x00002f86      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_L1.o)
+ .debug_str     0x00002fc7      0x10d .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(Timer_L1.o)
                                 0x329 (size before relaxing)
- .debug_str     0x00003093       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(L1.o)
+ .debug_str     0x000030d4       0x33 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(L1.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x000030c6       0x48 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(SW1.o)
+ .debug_str     0x00003107       0x48 .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(SW1.o)
                                 0x1dc (size before relaxing)
- .debug_str     0x0000310e      0x19c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CyFlash.o)
+ .debug_str     0x0000314f      0x19c .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CyFlash.o)
                                 0x3a5 (size before relaxing)
- .debug_str     0x000032aa       0xac .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CySpc.o)
+ .debug_str     0x000032eb       0xac .\CortexM3\ARM_GCC_541\Debug\ZumoBot.a(CySpc.o)
                                 0x32e (size before relaxing)
 
 .debug_loc      0x00000000     0x3239
@@ -3192,4 +3192,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\joack\OneDrive\Tiedostot\Zumo.release04\Zumo01\ZumoBot.cydsn\CortexM3\ARM_GCC_541\Debug\ZumoBot.elf elf32-littlearm)
+OUTPUT(C:\Users\joack\OneDrive\Tiedostot\GitHub\Tuomo-Bot\ZumoBot.cydsn\CortexM3\ARM_GCC_541\Debug\ZumoBot.elf elf32-littlearm)

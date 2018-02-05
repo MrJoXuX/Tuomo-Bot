@@ -261,7 +261,7 @@ int main()
     float a = 0.0;
     int i = 0;
     int button = 1;
-   for(;;)
+    for(;;)
     {
         i++;
         if (i >=1000) {
@@ -287,42 +287,21 @@ int main()
         button = SW1_Read();
         if (button == 0) {
             motor_start();                 
-        
-        //motor_forward(100,2000);     
-        motor_turn(106,100,4250);     
-        motor_turn(205,20,455);        
+             
+        motor_turn(106,100,4300);     
+        motor_turn(200,20,500);        
         motor_turn(106,100,3000);
-        motor_turn(200,20,455);
+        motor_turn(200,20,500);
         motor_turn(106,100,3150);
-        motor_turn(210,20,455);
+        motor_turn(200,20,525);
         motor_turn(210,150,1100);
         motor_turn(150,100,900);
-        motor_turn(106,100,600);
-        //motor_backward(100,2000);   
+        motor_turn(106,100,600);   
        
         motor_stop();
         }
         CyDelay(10);
     }
-    /*for(;;)
-    {
-    int button = 1;
-    while (button == 1) {
-        button = SW1_Read();
-    }
-    
-    
-
-    motor_start();              // motor start    
-        
-    //motor_forward(100,2000);     // moving forward
-    motor_turn(105,100,3500);     // turn
-    motor_turn(200,20,450);         // turn
-    motor_turn(105,100,3500);
-    //motor_backward(100,2000);    // movinb backward
-       
-    motor_stop();               // motor stop
-    }*/
 }
 //
     
