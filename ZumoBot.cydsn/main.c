@@ -244,6 +244,7 @@ int main()
     {
         int button = 1;
         int loop = 0;
+        int line = 0;
         reflectance_read(&ref);
         printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);       //print out each period of reflectance sensors
         reflectance_digital(&dig);      //print out 0 or 1 according to results of reflectance period
@@ -257,64 +258,61 @@ int main()
             reflectance_digital(&dig);
             reflectance_read(&ref);
             
-            while (dig.l3 == 0 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {
-                motor_turn(5,150,10);
+            while (dig.l3 == 0 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {  //hardly turns to the left
+                motor_turn(5,225,3);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
                 /*if (dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 1 && dig.r3 == 1) {
                     break;
                 }*/
             }
-            while (dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 1 && dig.r3 == 1) {
-                motor_turn(75,100,5);
+            while (dig.l1 == 0 && dig.r1 == 1) {    //softly turns to the left
+                motor_turn(150,210,3);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
                 /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
                     break;
                 }*/
             }
-            while (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
-                motor_forward(175,5);
+            while (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {  //moves forward
+                motor_forward(225,3);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
                 /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
                     break;
                 }*/
             }
-            while (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 0 && dig.r3 == 0) {
-                motor_turn(100,75,5);
+            while (dig.l1 == 1 && dig.r1 == 0) {    //softly turns to the right
+                motor_turn(210,150,3);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
                 /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
                     break;
                 }*/
             }
-            while (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 0) {
-                motor_turn(150,5,5);
+            while (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 0) {  //hardly turns to the right
+                motor_turn(225,5,3);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
                 /*if (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 0 && dig.r3 == 0) {
                     break;
                 }*/
             }
-            while (dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 0) {
-                motor_forward(0,0);
+            while (dig.l3 == 0 && dig.r3 == 0) {    //stops when coming across a black line
+                line++;
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);
-                break;
+                if (line > 4) {
+                    motor_forward(0,0);
+                }else {
+                    motor_forward(225,50);
+                }
+               
             }
-           
         }
+        loop = 0;
         }
         motor_stop();
-        loop = 0;
-        //CyDelay(10);
     }
 }   
 //
