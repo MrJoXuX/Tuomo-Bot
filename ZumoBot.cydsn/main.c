@@ -238,6 +238,8 @@ int main()
     reflectance_start();
 
     IR_led_Write(1);
+
+    reflectance_set_threshold(9000, 13000, 13000, 9000);
     for(;;)
     {
         reflectance_read(&ref);
