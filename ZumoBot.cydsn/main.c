@@ -238,8 +238,10 @@ int main()
     reflectance_start();
 
     IR_led_Write(1);
+    
+    unsigned int IR_val;
 
-    //reflectance_set_threshold(9000, 13000, 13000, 9000);
+    //reflectance_set_threshold(15000, 14000, 14000, 16500);
     for(;;)
     {
         int button = 1;
@@ -257,58 +259,46 @@ int main()
         while (loop == 1) {
             reflectance_digital(&dig);
             reflectance_read(&ref);
+            /*IR_val = get_IR();
+            printf("%x\r\n\n",IR_val);*/
             
             while (dig.l3 == 0 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {  //hardly turns to the left
-                motor_turn(5,225,3);
+                motor_turn(1,245,1);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                /*if (dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 1 && dig.r3 == 1) {
-                    break;
-                }*/
             }
             while (dig.l1 == 0 && dig.r1 == 1) {    //softly turns to the left
-                motor_turn(150,210,3);
+                motor_turn(150,210,1);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
-                    break;
-                }*/
             }
             while (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {  //moves forward
-                motor_forward(225,3);
-                reflectance_read(&ref);
-                reflectance_digital(&dig);
-                /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
-                    break;
-                }*/
+                    motor_forward(225,1);
+                    reflectance_read(&ref);
+                    reflectance_digital(&dig);
             }
             while (dig.l1 == 1 && dig.r1 == 0) {    //softly turns to the right
-                motor_turn(210,150,3);
+                motor_turn(210,150,1);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                /*if (dig.l3 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r3 == 1) {
-                    break;
-                }*/
             }
             while (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 0) {  //hardly turns to the right
-                motor_turn(225,5,3);
+                motor_turn(245,1,1);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                /*if (dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 0 && dig.r3 == 0) {
-                    break;
-                }*/
             }
-            while (dig.l3 == 0 && dig.r3 == 0) {    //stops when coming across a black line
+            while ((dig.l3 == 0 && dig.r3 == 0) && line <= 3) {
                 line++;
+                BatteryLed_Write(1);
                 reflectance_read(&ref);
                 reflectance_digital(&dig);
-                if (line > 4) {
-                    motor_forward(0,0);
-                }else {
-                    motor_forward(225,50);
-                }
-               
+                motor_forward (225, 80);
             }
+            if (line > 3) {
+                motor_forward(0,0);
+                break;
+            }
+            BatteryLed_Write(0);
         }
         loop = 0;
         }
